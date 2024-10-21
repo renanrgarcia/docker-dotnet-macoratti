@@ -1,0 +1,7 @@
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\dist\mvc1.exe
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\dist\appsettings.Development.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\dist\appsettings.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\dist\mvc1.dll
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\dist\mvc1.deps.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\dist\mvc1.runtimeconfig.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\dist\mvc1.pdb
