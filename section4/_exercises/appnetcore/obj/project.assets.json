@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\renan\\Projects\\docker-dotnet-macoratti\\section4\\appnetcore\\appnetcore.csproj",
+      "projectUniqueName": "C:\\Users\\renan\\Projects\\docker-dotnet-macoratti\\section4\\_exercises\\appnetcore\\appnetcore.csproj",
       "projectName": "appnetcore",
-      "projectPath": "C:\\Users\\renan\\Projects\\docker-dotnet-macoratti\\section4\\appnetcore\\appnetcore.csproj",
+      "projectPath": "C:\\Users\\renan\\Projects\\docker-dotnet-macoratti\\section4\\_exercises\\appnetcore\\appnetcore.csproj",
       "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renan\\Projects\\docker-dotnet-macoratti\\section4\\appnetcore\\obj\\",
+      "outputPath": "C:\\Users\\renan\\Projects\\docker-dotnet-macoratti\\section4\\_exercises\\appnetcore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\renan\\AppData\\Roaming\\NuGet\\NuGet.Config",

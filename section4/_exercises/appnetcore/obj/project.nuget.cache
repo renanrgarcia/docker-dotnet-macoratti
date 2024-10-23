@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nR6FetyVHCw=",
+  "dgSpecHash": "FQcwWt3iz7I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\renan\\Projects\\docker-dotnet-macoratti\\section4\\appnetcore\\appnetcore.csproj",
+  "projectFilePath": "C:\\Users\\renan\\Projects\\docker-dotnet-macoratti\\section4\\_exercises\\appnetcore\\appnetcore.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
