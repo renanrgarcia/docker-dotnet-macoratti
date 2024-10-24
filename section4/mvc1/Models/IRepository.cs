@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace mvc1.Models
 {
-    public interface ITestRepository
+    public interface IRepository
     {
         IEnumerable<Product>? Products { get; }
     }

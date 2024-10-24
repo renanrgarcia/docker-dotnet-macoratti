@@ -8,6 +8,12 @@ namespace mvc1.Models
     public class Product
     {
         public Product() { }
+        public Product(string name, string category, decimal price)
+        {
+            Name = name;
+            Category = category;
+            Price = price;
+        }
         public Product(int productId, string name, string category, decimal price)
         {
             ProductId = productId;

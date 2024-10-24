@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using mvc1.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,8 +6,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+var host = builder.Configuration["DBHOST"] ?? "localhost";
+var port = builder.Configuration["DBPORT"] ?? "3306";
+var password = builder.Configuration["DBPASSWORD"] ?? "password";
+
+var connectionString = $"server={host};userid=root;pwd={password};port={port};database=mvc1;SslMode=none";
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-builder.Services.AddTransient<ITestRepository, TestRepository>();
+builder.Services.AddTransient<IRepository, ProductRepository>();
 
 var app = builder.Build();
 
@@ -20,6 +30,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+PopulateDb.DataIncludeDB(app);
 
 app.UseRouting();
 

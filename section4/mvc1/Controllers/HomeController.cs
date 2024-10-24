@@ -6,10 +6,10 @@ namespace mvc1.Controllers;
 
 public class HomeController : Controller
 {
-    private ITestRepository _repository;
+    private IRepository _repository;
     private readonly IHttpContextAccessor _httpContextAccessor;
     private string message;
-    public HomeController(ITestRepository repository,
+    public HomeController(IRepository repository,
      IHttpContextAccessor httpContextAccessor)
     {
         _repository = repository;
