@@ -10,7 +10,7 @@ var host = builder.Configuration["DBHOST"] ?? "localhost";
 var port = builder.Configuration["DBPORT"] ?? "3306";
 var password = builder.Configuration["DBPASSWORD"] ?? "password";
 
-var connectionString = $"server={host};userid=root;pwd={password};port={port};database=mvc1;SslMode=none";
+var connectionString = $"server={host};userid=root;pwd={password};port={port};database=productsdb;SslMode=none";
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
@@ -31,7 +31,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-PopulateDb.DataIncludeDB(app);
+// PopulateDb.DataIncludeDB(app);
 
 app.UseRouting();
 

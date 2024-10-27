@@ -121,3 +121,13 @@ C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0
 C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\appsettings.json
 C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\mvc1.deps.json
 C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\mvc1.runtimeconfig.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\web.config
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\appsettings.Development.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\appsettings.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\mvc1.deps.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\mvc1.runtimeconfig.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\dist\web.config
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\dist\appsettings.Development.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\dist\appsettings.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\dist\mvc1.deps.json
+C:\Users\renan\Projects\docker-dotnet-macoratti\section4\mvc1\bin\Release\net8.0\dist\dist\dist\dist\mvc1.runtimeconfig.json
