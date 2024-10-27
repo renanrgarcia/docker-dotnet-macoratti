@@ -1,0 +1,17 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0
+
+RUN mkdir /app
+
+WORKDIR /app
+
+COPY mvc1.csproj .
+
+RUN dotnet restore
+
+COPY . .
+
+RUN dotnet publish -c Release -o dist
+
+EXPOSE 8080/tcp
+
+CMD ["dotnet","dist/mvc1.dll"]
