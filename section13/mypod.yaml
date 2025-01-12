@@ -1,0 +1,20 @@
+apiVersion: v1 # Indicates the Kubernetes API version to create the object.
+
+kind: Pod # Indicates the type of object to create. Can be: Pod, Service, Deployment, ReplicaSet, Namespace, etc.
+
+metadata: # Contains the object's metadata.
+  name: mypod # Name of the object.
+
+spec: # Contains the object's specification.
+  containers: # Contains the list of containers to run in the pod.
+    - name: cont-nginx # Name of the container.
+      image: nginx # Image to use.
+      ports: # List of ports to expose.
+        - containerPort: 80 # Port to expose.
+      resources: # Resource limits for the container.
+        limits:
+          memory: "512Mi"
+          cpu: "500m"
+        requests:
+          memory: "256Mi"
+          cpu: "250m"
