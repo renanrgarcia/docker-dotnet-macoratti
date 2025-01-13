@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-     app: pizzafrontend
+    app: pizzafrontend
   ports:
     - port: 8080
       targetPort: 80
