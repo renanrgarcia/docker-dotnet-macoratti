@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace Catalog.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    // [ApiConventionType(typeof(DefaultApiConventions))] < Alternative to [ProducesResponseType] attribute
+    [Route("api/v1/[controller]")]
     public class CatalogController : ControllerBase
     {
         private readonly IProductRepository _repository;
@@ -32,9 +33,7 @@ namespace Catalog.API.Controllers
             var product = await _repository.GetProduct(id);
 
             if (product is null)
-            {
                 return NotFound();
-            }
 
             return Ok(product);
         }
@@ -45,6 +44,9 @@ namespace Catalog.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> GetProductByCategory(string category)
         {
+            if (category is null)
+                return BadRequest("Invalid category");
+
             var products = await _repository.GetProductByCategory(category);
 
             return Ok(products);
@@ -55,9 +57,7 @@ namespace Catalog.API.Controllers
         public async Task<IActionResult> CreateProduct([FromBody] Product product)
         {
             if (product is null)
-            {
                 return BadRequest("Invalid product");
-            }
 
             await _repository.CreateProduct(product);
 
@@ -66,18 +66,17 @@ namespace Catalog.API.Controllers
 
         [HttpPut]
         [ProducesResponseType(typeof(Product), StatusCodes.Status200OK)]
+        // [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Put))] < Alternative to [ProducesResponseType] attribute
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> UpdateProduct([FromBody] Product product)
         {
             if (product is null)
-            {
                 return BadRequest("Invalid product");
-            }
 
             return Ok(await _repository.UpdateProduct(product));
         }
 
-        [HttpDelete("{id:length(24)}")]
+        [HttpDelete("{id:length(24)}", Name = "DeleteProduct")]
         [ProducesResponseType(typeof(Product), StatusCodes.Status200OK)]
         public async Task<IActionResult> DeleteProduct(string id)
         {
